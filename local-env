@@ -1,0 +1,7 @@
+DB_HOST=mysql
+DB_PORT=3306
+DB_USER=rezuan
+DB_PASSWORD=rezuan00
+DB_NAME=movieDB
+
+APP_PORT=8000
