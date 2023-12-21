@@ -5,14 +5,14 @@ networks:
 
 services:
     py-app:
-        image: "rezuan0/python-app:v2"
+        image: "rezuan0/python-first:v3"
         env_file:
             - $PWD/.env
         container_name: py-app
         restart: always
         ports:
             - "${APP_PORT}:8000"
-        command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+        command: ["python3", "main.py"]
         volumes:
             - $PWD/database.py:/pyapp/database.py
             - $PWD/main.py:/pyapp/main.py
