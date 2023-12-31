@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - mian
-
 jobs:
   build:
     name: linter
